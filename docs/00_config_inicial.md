@@ -2,6 +2,18 @@
 
 - Iniciar na pasta: /home/robertsilvatech/Workspace/me/my-github/jornada-devops01
 
+- [Configurações iniciais para apresentar as aplicações](#configurações-iniciais-para-apresentar-as-aplicações)
+  - [Criar rede para os containers](#criar-rede-para-os-containers)
+  - [menu-service](#menu-service)
+    - [Criar banco de dados postgres-db-menu](#criar-banco-de-dados-postgres-db-menu)
+    - [Criar arquivo de variável local na pasta arquivos-iniciais/aplicacoes/menu-service/.env](#criar-arquivo-de-variável-local-na-pasta-arquivos-iniciaisaplicacoesmenu-serviceenv)
+    - [Iniciar aplicação](#iniciar-aplicação)
+  - [order-service](#order-service)
+    - [Criar banco de dados postgres-db-order](#criar-banco-de-dados-postgres-db-order)
+    - [Criar arquivo de variável local na pasta arquivos-iniciais/aplicacoes/order-service/.env](#criar-arquivo-de-variável-local-na-pasta-arquivos-iniciaisaplicacoesorder-serviceenv)
+    - [Iniciar aplicação](#iniciar-aplicação-1)
+
+
 ## Criar rede para os containers
 ```bash
 docker network create microservices -d bridge
